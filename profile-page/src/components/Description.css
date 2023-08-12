@@ -1,0 +1,7 @@
+.Description{
+    height: 5em;
+    width: 10em;
+    border-radius: 10px;
+    background-color: rgba(240, 166, 113, 0.475);
+    border: 1px solid gray;
+}

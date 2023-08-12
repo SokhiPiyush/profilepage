@@ -1,0 +1,7 @@
+.detailbox{
+    height: 10em;
+    width: 35em;
+    background-color: rgba(254, 217, 93, 0.771);
+    border: 1px solid gray;
+    border-radius: 20px;
+}
