@@ -1,7 +1,32 @@
+:root {
+    --bgColor : rgba(240, 166, 113, 0.475);
+    --brColor: gray;
+}
 .Description{
-    height: 5em;
-    width: 10em;
-    border-radius: 10px;
-    background-color: rgba(240, 166, 113, 0.475);
-    border: 1px solid gray;
+     border: 1px solid var(--brColor);
+     border-radius: 2rem;
+     padding: 3.4rem 6rem;
+     margin-bottom: 1.5rem;
+     background-color: var(--bgColor);
+}
+
+.descField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.inputTextDesc, .inputTextName {
+    padding: 4px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 2px;
+}
+
+.saveBtn {
+    cursor: pointer;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
 }
