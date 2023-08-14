@@ -19,23 +19,25 @@ const Detailbox = () => {
     return (
       <div className='detailbox'>
         {isEditing ? (
-          <div>
+          <div className='inputFields'>
             <input
+            className='inputText'
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
             <textarea
+            className='inputText'
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
-            <button onClick={handleSaveClick}>Save</button>
+            <button className='saveBtn' onClick={handleSaveClick}>Save</button>
           </div>
         ) : (
-          <div>
+          <div className='mainText'>
             <h2>{title}</h2>
             <p>{description}</p>
-            <button onClick={handleEditClick}>Edit</button>
+            <button className='saveBtn' onClick={handleEditClick}>Edit</button>
           </div>
         )}
       </div>

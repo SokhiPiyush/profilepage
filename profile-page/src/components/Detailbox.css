@@ -1,7 +1,44 @@
 .detailbox{
-    height: 10em;
-    width: 35em;
+    height: 8rem;
     background-color: rgba(254, 217, 93, 0.771);
     border: 1px solid gray;
     border-radius: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.6rem;
+}
+.mainText h2 {
+    font-size: 22px;
+}
+.mainText p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.inputText {
+    padding: 4px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 2px;
+}
+
+.saveBtn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
 }

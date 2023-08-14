@@ -23,7 +23,7 @@ const Imagetext = () => {
     <div className='imagetext'>
       {isEditing ? (
         <div className='imagetextwrapper'>
-          <input className='imagetextheading'
+          <input className='inputText'
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -33,13 +33,13 @@ const Imagetext = () => {
             accept=".jpg,.jpeg,.png"
             onChange={handleFileChange}
           />
-          <button onClick={handleSaveClick}>Save</button>
+          <button className='saveBtn' onClick={handleSaveClick}>Save</button>
         </div>
       ) : (
         <div className='imagetextwrapper' >
           <h2>{title}</h2>
           {selectedImage && <img src={selectedImage} alt="SelectedImage" />}
-          <button onClick={handleEditClick}>Edit</button>
+          <button className='saveBtn' onClick={handleEditClick}>Edit</button>
         </div>
       )}
     </div>

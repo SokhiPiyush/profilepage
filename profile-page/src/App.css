@@ -1,18 +1,70 @@
-.App{
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  right: 5px;
+  top: 40px;
+  width: calc(100% - 10px);
+  height: calc(90vh - 10px);
+  border-radius: 20px;
+  background-color: var(--fcolor)
+}
+
+/* .app {
   display: flex;
+  justify-content: space-evenly;
+  height: 90vh;
+  width: 100%;
+  background-color: aqua;
+} */
+
+.left-side {
+  margin-left: 10%;
+  width: 60%;
+  margin-right: 30px;
+}
+
+.right-side {
+  width: 40%;
+  margin-right: 10%;
+}
+.profile {
+  display: flex;
+}
+
+.left-upper-side, .right-upper-side {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
 }
-.profile{
-  width: 100%;
+
+.left-upper-side .desc {
+  flex-grow: 1;
+}
+
+.right-upper-side {
+     border-radius: 2rem;
+     padding: 3.2rem 6rem;
+     margin-bottom: 1.5rem;
+     /* background-color: aqua; */
+}
+.action-btns {
   display: flex;
-  
+  justify-content: space-between;
+  border-radius: 2rem;
+  background-color: rgba(43, 43, 43, 0.442);
+  padding: 5px;
+  align-items: center;
 }
-.desc{
-  width: 100%;
-}
-.imagetext{
-  margin: 1em;
+.action-btns #btn {
+  text-align: center;
+  border: 1px solid gray;
+  padding: 1rem;
+  margin: 10px 6px;
+  border-radius: 50%;
 }

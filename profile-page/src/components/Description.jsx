@@ -19,23 +19,25 @@ const Description = () => {
     return (
       <div className='Description'>
         {isEditing ? (
-          <div>
+          <div className='descField'>
             <input
+            className='inputTextName'
               type="text"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
             <textarea
+            className='inputTextDesc'
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
-            <button onClick={handleSaveClick}>Save</button>
+            <button className='saveBtn' onClick={handleSaveClick}>Save</button>
           </div>
         ) : (
           <div>
             <h2>{title}</h2>
             <p>{description}</p>
-            <button onClick={handleEditClick}>Edit</button>
+            <button className='saveBtn' onClick={handleEditClick}>Edit</button>
           </div>
         )}
       </div>
